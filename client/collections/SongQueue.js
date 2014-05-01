@@ -3,7 +3,7 @@ var SongQueue = Songs.extend({
 
   initialize: function(){
     // ADDED
-    // this.on('add', function(){console.log('hello')});
+    this.on('add', function(){console.log('hello')});
     // ENDOFADD
   }
 
