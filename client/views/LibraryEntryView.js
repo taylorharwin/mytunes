@@ -11,15 +11,15 @@ var LibraryEntryView = Backbone.View.extend({
       // this.model.render();
 
       //ADDED
-      console.log("LibraryEntryView - Events");
       this.model.enqueue();
+      console.log("LibraryEntryView - Events");
       //END
 
     },
 
-    'click .AddtoQueue': function(){
-      console.log('add to queue');
-    }
+    // 'click .AddtoQueue': function(){
+    //   this.model.enqueue();
+    // }
   },
 
   render: function(){

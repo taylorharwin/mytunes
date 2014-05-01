@@ -25,13 +25,14 @@ var AppModel = Backbone.Model.extend({
 
     ///ADDED STUFF
     params.library.on('enqueue', function(song){
+    console.log("AppModel - enqueue");
     // console.log(this);
       this.get('songQueue').add(song);
     }, this);
 
     params.library.on('dequeue', function(song){
-        console.log("AppModel - dequeue");
-      this.set('SongQueue', song);
+    console.log("AppModel - dequeue");
+      this.get('songQueue').remove(song);
     }, this);
     ///END OF ADD
 
